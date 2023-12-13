@@ -107,7 +107,7 @@ public:
                 obj->_2dBox->boundingBox.y        = std::stoi(data2D[2]);
                 obj->_2dBox->boundingBox.width    = abs( std::stoi(data2D[1]) - std::stoi(data2D[3]));
                 obj->_2dBox->boundingBox.height   = abs(std::stoi(data2D[2]) - std::stoi(data2D[4]));
-                obj->confidence                   = std::stoi(data2D[5]);
+                obj->confidence                   = std::stof(data2D[5]);
                 obj->classId                      = 2;
                 obj->_2dBox->observationNumber    = 1;
                 obj->_2dBox->found = true;
